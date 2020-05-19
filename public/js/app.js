@@ -2,6 +2,7 @@ const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
+console.log('This is a test.')
 
 fetch('http://localhost:3000/weather?address=!').then((response) => {
     response.json().then((data) => {
